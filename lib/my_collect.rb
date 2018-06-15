@@ -1,9 +1,10 @@
 def my_collect(arg)
   i = 0
+  array = []
   while i < arg.length
-    yield arg[i]
+    array << yield arg[i]
     i += 1
   end
-  arg
+  array
 end
 
